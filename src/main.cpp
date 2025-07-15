@@ -17,7 +17,7 @@ int main(int argv, char *argc[])
 	std::thread portmap_thread(&PortmapService::handle_portmap, &portmap);
 	portmap_thread.detach();
 
-	// 初始化 NFS/MOUNT 服务器， 端口2049
+	// 启动 NFS/MOUNT 服务器， 端口2049
 	NFSService server(argc[1], 2049);
 	server.run();
 

@@ -28,3 +28,4 @@ public:
 			  int verflv = 0, int verlen = 0, char *verdata = nullptr); // 创建RPC响应头
 	~RPCHandle() = default;
 };
+
