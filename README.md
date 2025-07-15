@@ -3,7 +3,7 @@
 The NFSv2 protocol is no longer supported on Ubuntu 22/24. To solve the problem of downloading files using the NFS protocol in older versions of u-boot, we manually implement some of the NFSv2 functions using C/C++.
 
 ## Build:
-    mkdir build;cd build;make
+`mkdir build;cd build;make`
 
 ## Usage:
 if have nfs-kernel-server: \
@@ -17,7 +17,7 @@ if running 'rpcbind': \
 first run this NFSv2 server \
 `./nfsv2 /path/dir`
 
-Then use NFS commands in u-boot to download files \
+then use NFS commands in u-boot to download files \
 `nfs 80800000 192.168.xx.xx:/path/dir/file`
 
 make sure the port 111 && 2049 empty
